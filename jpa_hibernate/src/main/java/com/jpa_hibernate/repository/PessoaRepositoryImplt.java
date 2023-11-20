@@ -1,4 +1,4 @@
-package com.jpa_hibernate.controllers;
+package com.jpa_hibernate.repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 import com.jpa_hibernate.entities.Pessoa;
 
-public class PessoaControllersImplt implements PessoaControllers {
+public class PessoaRepositoryImplt implements PessoaRepository {
     
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jpa-hibernate");
     EntityManager entityManager = entityManagerFactory.createEntityManager();

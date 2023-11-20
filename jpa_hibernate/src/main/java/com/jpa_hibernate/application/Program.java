@@ -1,13 +1,14 @@
 package com.jpa_hibernate.application;
 
-import com.jpa_hibernate.controllers.PessoaControllers;
-import com.jpa_hibernate.controllers.PessoaControllersImplt;
 import java.util.Scanner;
+
+import com.jpa_hibernate.repository.PessoaRepository;
+import com.jpa_hibernate.repository.PessoaRepositoryImplt;
 
 public class Program {
     public static void main(String[] args) {
         
-        PessoaControllers pessoa = new PessoaControllersImplt();
+        PessoaRepository pessoa = new PessoaRepositoryImplt();
         Scanner inputScanner = new Scanner(System.in);
         int choice;
 
